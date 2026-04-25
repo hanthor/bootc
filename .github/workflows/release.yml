@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libglib2.0-dev pkg-config
+          sudo apt-get install -y libglib2.0-dev pkg-config libostree-dev libsystemd-dev libssl-dev
 
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
